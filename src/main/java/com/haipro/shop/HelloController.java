@@ -8,6 +8,17 @@ public class HelloController {
 
     @GetMapping("/")
     public String index() {
-        return "Hello World from Spring Boot with Haipro!";
+        return "Lỗi Vãi";
     }
+
+    @GetMapping("/user")
+    public String userpage() {
+        return "Only User can access";
+    }
+
+    @GetMapping("/admin")
+    public String adminpage() {
+        return "Only Admin";
+    }
+
 }
